@@ -19,3 +19,33 @@
 <input type=text id=invoer value="tekst in de tekstbox">
 <button onclick="eersteloop()">Check</button>
 <h1 id=resultaat>resultaat</h1>
+
+
+<style>
+    h1{
+        background-color:gray;
+        padding:20px;
+        margin:20px;
+    }
+    input{
+        color:orange;
+        font-size: 30px;
+    }
+    button{
+        font-size: 30px;
+    }
+</style>
+<script>
+    function tweedeloop(){
+        var hetwoord = document.getElementById("invoertwee").value;      
+        for(var x = 0; x < hetwoord.length; x++){
+            console.log(hetwoord.charAt(x));
+            if(hetwoord.charAt(x) == "e"){
+                alert("er zit een e in");
+            }
+        }
+   }
+</script>
+
+<input type=text id=invoertwee value="">
+<button onclick="tweedeloop()">Check</button>
