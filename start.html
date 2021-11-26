@@ -1,0 +1,21 @@
+
+<script>
+    function eersteloop(){
+        var deDOM = document.getElementsByTagName("html");
+        console.log(deDOM);
+        var hetelem = document.getElementById("invoer");
+        console.log(hetelem.value);
+        if(hetelem.value == "eens"){
+            document.getElementById("resultaat").innerHTML = "Hij is het er mee eens";
+            document.getElementById("resultaat").style.backgroundColor = 'green';
+        }else{
+            document.getElementById("resultaat").innerHTML = "Hij is het er niet mee eens";
+            document.getElementById("resultaat").style.backgroundColor = 'red';
+
+        }
+   }
+</script>
+
+<input type=text id=invoer value="tekst in de tekstbox">
+<button onclick="eersteloop()">Check</button>
+<h1 id=resultaat>resultaat</h1>
